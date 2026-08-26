@@ -12,6 +12,32 @@
   <meta property="og:description" content="Commandez votre carte NFC VISION TAP à 199 DH. Livraison 100% Gratuite partout au Maroc.">
   <meta property="og:type" content="product">
   
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '1716669512883758');
+    fbq('track', 'PageView');
+    fbq('track', 'ViewContent', {
+      content_name: 'VISION TAP NFC Card',
+      content_category: 'NFC Smart Card',
+      value: 199,
+      currency: 'MAD'
+    });
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1716669512883758&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
   <!-- Google Fonts & Tailwind CDN & Lucide Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -156,7 +182,7 @@
 
       <!-- HEADER CTA -->
       <div class="flex items-center gap-3">
-        <a href="#commander" class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-brand-orange to-brand-accent hover:from-brand-orangeGlow hover:to-brand-orange text-black font-bold px-4 py-2.5 md:px-5 md:py-2.5 rounded-xl text-sm transition-all duration-300 shadow-[0_0_20px_rgba(255,122,0,0.4)] hover:shadow-[0_0_30px_rgba(255,122,0,0.6)] transform hover:-translate-y-0.5">
+        <a href="#commander" class="track-checkout-btn inline-flex items-center justify-center gap-2 bg-gradient-to-r from-brand-orange to-brand-accent hover:from-brand-orangeGlow hover:to-brand-orange text-black font-bold px-4 py-2.5 md:px-5 md:py-2.5 rounded-xl text-sm transition-all duration-300 shadow-[0_0_20px_rgba(255,122,0,0.4)] hover:shadow-[0_0_30px_rgba(255,122,0,0.6)] transform hover:-translate-y-0.5">
           <i data-lucide="shopping-bag" class="w-4 h-4 text-black"></i>
           <span>Commander</span>
           <span class="bg-black/20 text-black px-1.5 py-0.5 rounded text-xs">199 DH</span>
@@ -211,7 +237,7 @@
 
           <!-- CTA Buttons -->
           <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
-            <a href="#commander" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-brand-orange to-brand-accent hover:from-brand-orangeGlow hover:to-brand-orange text-black font-extrabold px-8 py-4 rounded-xl text-base transition-all duration-300 shadow-[0_0_25px_rgba(255,122,0,0.45)] hover:shadow-[0_0_40px_rgba(255,122,0,0.7)] transform hover:-translate-y-1">
+            <a href="#commander" class="track-checkout-btn w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-brand-orange to-brand-accent hover:from-brand-orangeGlow hover:to-brand-orange text-black font-extrabold px-8 py-4 rounded-xl text-base transition-all duration-300 shadow-[0_0_25px_rgba(255,122,0,0.45)] hover:shadow-[0_0_40px_rgba(255,122,0,0.7)] transform hover:-translate-y-1">
               <i data-lucide="zap" class="w-5 h-5 fill-black text-black"></i>
               <span>Commander ma carte</span>
             </a>
@@ -515,7 +541,7 @@
             </p>
           </div>
           <div class="pt-6 mt-6 border-t border-brand-border/60 flex items-center gap-2 text-xs text-brand-orange font-semibold">
-            <span>Détection instantanée (< 1 sec)</span>
+            <span>Détection instantanée (&lt; 1 sec)</span>
           </div>
         </div>
 
@@ -742,7 +768,7 @@
           </div>
         </div>
 
-        <a href="#commander" class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-brand-orange to-brand-accent hover:from-brand-orangeGlow hover:to-brand-orange text-black font-extrabold px-10 py-4 rounded-xl text-lg transition-all duration-300 shadow-[0_0_30px_rgba(255,122,0,0.5)] hover:shadow-[0_0_50px_rgba(255,122,0,0.8)] transform hover:scale-105">
+        <a href="#commander" class="track-checkout-btn inline-flex items-center justify-center gap-3 bg-gradient-to-r from-brand-orange to-brand-accent hover:from-brand-orangeGlow hover:to-brand-orange text-black font-extrabold px-10 py-4 rounded-xl text-lg transition-all duration-300 shadow-[0_0_30px_rgba(255,122,0,0.5)] hover:shadow-[0_0_50px_rgba(255,122,0,0.8)] transform hover:scale-105">
           <i data-lucide="shopping-cart" class="w-5 h-5"></i>
           <span>Commander maintenant</span>
         </a>
@@ -1119,7 +1145,7 @@
   </aside>
 
   <!-- ============================================== -->
-  <!-- JAVASCRIPT LOGIC & GOOGLE APPS SCRIPT SYNC -->
+  <!-- JAVASCRIPT LOGIC, TRACKING & GOOGLE APPS SCRIPT -->
   <!-- ============================================== -->
   <script>
     // Initialize Lucide Icons
@@ -1131,8 +1157,6 @@
     const WHATSAPP_NUMBER = "212660718191";
     const WHATSAPP_DEFAULT_MSG = encodeURIComponent("Bonjour, Salam ! Je suis intéressé(e) par la carte NFC VISION TAP à 199 DH (Livraison Gratuite). J'aimerais avoir plus de détails et passer commande.");
     const UNIT_PRICE = 199;
-    
-    // Web App URL الخاص بـ Google Apps Script
     const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxPvOzYx5AJH5F9M3W34QJCYXjE8g2r77CN3D_6m44t-uPdIjSjGSPqCaFpTFuoAMb8/exec";
 
     // Setup WhatsApp Links
@@ -1141,6 +1165,21 @@
     const footerWa = document.getElementById("footerWhatsappBtn");
     if (floatingWa) floatingWa.href = waFullUrl;
     if (footerWa) footerWa.href = waFullUrl;
+
+    /* -------------------------------------------------------------
+       META PIXEL: TRACK INITIATE CHECKOUT
+    ------------------------------------------------------------- */
+    document.querySelectorAll('.track-checkout-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (typeof fbq === 'function') {
+          fbq('track', 'InitiateCheckout', {
+            content_name: 'VISION TAP NFC Card',
+            value: UNIT_PRICE,
+            currency: 'MAD'
+          });
+        }
+      });
+    });
 
     /* -------------------------------------------------------------
        DYNAMIC QUANTITY & TOTAL CALCULATOR
@@ -1199,7 +1238,7 @@
     });
 
     /* -------------------------------------------------------------
-       FORM SUBMISSION & GOOGLE APPS SCRIPT INTEGRATION (SINGLE HANDLER)
+       FORM SUBMISSION & GOOGLE APPS SCRIPT INTEGRATION (CORS SAFE)
     ------------------------------------------------------------- */
     const orderForm = document.getElementById('orderForm');
     const submitBtn = document.getElementById('submitBtn');
@@ -1221,6 +1260,16 @@
       if (!nom || !telephone || !adresse || !ville || !infosCarte) {
         alert("Veuillez remplir tous les champs obligatoires.");
         return;
+      }
+
+      // Track InitiateCheckout lors de la soumission du formulaire
+      if (typeof fbq === 'function') {
+        fbq('track', 'InitiateCheckout', {
+          content_name: 'VISION TAP NFC Card',
+          num_items: quantite,
+          value: prix,
+          currency: 'MAD'
+        });
       }
 
       // 2. Loading State & منع النقر المزدوج
@@ -1258,7 +1307,18 @@
           body: JSON.stringify(payload)
         });
 
-        // 5. حالة النجاح (Success State)
+        // 5. إرسال Meta Pixel Purchase Event بعد نجاح الإرسال حصراً
+        if (typeof fbq === 'function') {
+          fbq('track', 'Purchase', {
+            content_name: 'VISION TAP NFC Card',
+            content_type: 'product',
+            num_items: quantite,
+            value: prix,
+            currency: 'MAD'
+          });
+        }
+
+        // 6. حالة النجاح (Success State)
         orderForm.reset();
         currentQuantity = 1;
         updatePricing();
