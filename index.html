@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VISION TAP | Votre Carte NFC Intelligente & Professionnelle - 199 DH</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Partagez instantanément vos coordonnées, réseaux sociaux, WhatsApp et site web avec un simple Tap. Carte NFC intelligente VISION TAP à seulement 199 DH avec livraison gratuite partout au Maroc.">
+  <meta name="keywords" content="Carte NFC Maroc, Business Card NFC, Carte de visite intelligente, VISION TAP, Carte sans contact Casablanca Rabat Marrakech">
+  <meta property="og:title" content="VISION TAP - Votre Carte NFC. Votre Identité. Un Simple Tap.">
+  <meta property="og:description" content="Commandez votre carte NFC VISION TAP à 199 DH. Livraison 100% Gratuite partout au Maroc.">
+  <meta property="og:type" content="product">
+  
+  <!-- Google Fonts & Tailwind CDN & Lucide Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#070709',
+              dark: '#0E0E12',
+              card: '#14141B',
+              border: '#23232E',
+              orange: '#FF7A00',
+              orangeGlow: '#FF9433',
+              accent: '#FF5400',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
+          },
+          animation: {
+            'pulse-glow': 'pulseGlow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'float': 'float 4s ease-in-out infinite',
+            'radar': 'radar 2.5s infinite',
+          },
+          keyframes: {
+            pulseGlow: {
+              '0%, 100%': { opacity: '0.4', transform: 'scale(1)' },
+              '50%': { opacity: '0.8', transform: 'scale(1.05)' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0px) rotate3d(1, 1, 0, 8deg)' },
+              '50%': { transform: 'translateY(-12px) rotate3d(1, 1, 0, 14deg)' },
+            },
+            radar: {
+              '0%': { transform: 'scale(0.8)', opacity: '0.9' },
+              '100%': { transform: 'scale(2.2)', opacity: '0' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    ::selection {
+      background-color: #FF7A00;
+      color: #000;
+    }
+    
+    .glass-panel {
+      background: rgba(20, 20, 27, 0.7);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 122, 0, 0.12);
+    }
+    
+    .glass-panel-hover {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-panel-hover:hover {
+      border-color: rgba(255, 122, 0, 0.4);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px -10px rgba(255, 122, 0, 0.15);
+    }
+
+    .glow-effect {
+      position: absolute;
+      background: radial-gradient(circle, rgba(255,122,0,0.22) 0%, rgba(255,84,0,0) 70%);
+      pointer-events: none;
+    }
+
+    .perspective-container {
+      perspective: 1000px;
+    }
+    .nfc-card-3d {
+      transform-style: preserve-3d;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.9), 0 0 40px -10px rgba(255, 122, 0, 0.35);
+      transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .nfc-card-3d:hover {
+      transform: translateY(-6px) rotateX(10deg) rotateY(-8deg) scale(1.02);
+    }
+
+    .gradient-border-box {
+      position: relative;
+      background: #111116;
+      border-radius: 1.25rem;
+    }
+    .gradient-border-box::before {
+      content: "";
+      position: absolute;
+      inset: -1px;
+      border-radius: 1.3rem;
+      padding: 1px;
+      background: linear-gradient(135deg, rgba(255,122,0,0.8), rgba(255,255,255,0.05), rgba(255,122,0,0.2));
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+    }
+  </style>
+</head>
+
+<body class="bg-brand-black text-gray-200 font-sans antialiased overflow-x-hidden selection:bg-brand-orange selection:text-black">
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="bg-gradient-to-r from-brand-orange/20 via-brand-orange/40 to-brand-orange/20 border-b border-brand-orange/30 py-2 px-4 text-center text-xs md:text-sm font-semibold text-white tracking-wide flex items-center justify-center gap-2">
+    <span class="inline-flex items-center justify-center w-2 h-2 rounded-full bg-brand-orange animate-ping"></span>
+    <span>⚡ OFFRE SPÉCIALE : <strong>199 DH</strong> seulement + <strong>LIVRAISON 100% GRATUITE</strong> partout au Maroc !</span>
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="sticky top-0 z-40 bg-brand-black/85 backdrop-blur-md border-b border-brand-border/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- LOGO VISION TAP -->
+      <a href="#" class="flex items-center gap-2 group">
+        <div class="flex items-center text-2xl md:text-3xl font-extrabold tracking-wider font-display select-none">
+          <span class="text-white tracking-tight">VISION</span>
+          <span class="ml-2 px-2.5 py-0.5 rounded-lg border-2 border-brand-orange text-brand-orange relative text-xl md:text-2xl shadow-[0_0_15px_rgba(255,122,0,0.3)]">
+            TAP
+            <span class="absolute -bottom-0.5 right-2 w-2 h-0.5 bg-brand-black"></span>
+          </span>
+        </div>
+      </a>
+
+      <!-- NAV LINKS (DESKTOP) -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+        <a href="#about" class="hover:text-brand-orange transition-colors duration-200">C'est quoi ?</a>
+        <a href="#how-it-works" class="hover:text-brand-orange transition-colors duration-200">Comment ça marche</a>
+        <a href="#benefits" class="hover:text-brand-orange transition-colors duration-200">Avantages</a>
+        <a href="#targets" class="hover:text-brand-orange transition-colors duration-200">Pour qui ?</a>
+        <a href="#faq" class="hover:text-brand-orange transition-colors duration-200">FAQ</a>
+      </nav>
+
+      <!-- HEADER CTA -->
+      <div class="flex items-center gap-3">
+        <a href="#commander" class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-brand-orange to-brand-accent hover:from-brand-orangeGlow hover:to-brand-orange text-black font-bold px-4 py-2.5 md:px-5 md:py-2.5 rounded-xl text-sm transition-all duration-300 shadow-[0_0_20px_rgba(255,122,0,0.4)] hover:shadow-[0_0_30px_rgba(255,122,0,0.6)] transform hover:-translate-y-0.5">
+          <i data-lucide="shopping-bag" class="w-4 h-4 text-black"></i>
+          <span>Commander</span>
+          <span class="bg-black/20 text-black px-1.5 py-0.5 rounded text-xs">199 DH</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================== -->
+  <!-- 1. HERO SECTION -->
+  <!-- ============================================== -->
+  <section class="relative min-h-[calc(100vh-5rem)] flex items-center justify-center pt-8 pb-16 md:py-24 overflow-hidden">
+    <!-- Ambient Background Glows -->
+    <div class="glow-effect w-[500px] h-[500px] -top-32 -left-32 rounded-full blur-[140px]"></div>
+    <div class="glow-effect w-[600px] h-[600px] top-1/2 -right-40 rounded-full blur-[160px] opacity-40"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Hero Copy -->
+        <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-orange/10 border border-brand-orange/30 text-brand-orange text-xs md:text-sm font-semibold tracking-wide">
+            <span class="w-2 h-2 rounded-full bg-brand-orange animate-ping"></span>
+            La Révolution de la Carte de Visite au Maroc
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-[1.12] tracking-tight font-display">
+            Votre Carte NFC.<br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400">Votre Identité.</span><br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-amber-300 drop-shadow-[0_0_35px_rgba(255,122,0,0.4)]">
+              Un Simple Tap.
+            </span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-gray-300 max-w-xl mx-auto lg:mx-0 font-normal leading-relaxed">
+            Partagez instantanément vos coordonnées, réseaux sociaux, WhatsApp, catalogue et site web d’un simple geste sans contact. Écologique, réutilisable à vie et sans application requise.
+          </p>
+
+          <!-- Price & Free Delivery Highlight -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+            <div class="flex items-baseline gap-2 bg-brand-card/80 border border-brand-border px-4 py-2.5 rounded-xl">
+              <span class="text-3xl font-extrabold text-white font-display">199 <span class="text-brand-orange text-xl font-bold">DH</span></span>
+              <span class="text-xs text-gray-400 line-through">399 DH</span>
+            </div>
+            
+            <div class="flex items-center gap-2 bg-emerald-950/40 border border-emerald-500/30 text-emerald-400 px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold">
+              <i data-lucide="truck" class="w-4 h-4 text-emerald-400"></i>
+              <span>Livraison 100% Gratuite partout au Maroc</span>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+            <a href="#commander" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-brand-orange to-brand-accent hover:from-brand-orangeGlow hover:to-brand-orange text-black font-extrabold px-8 py-4 rounded-xl text-base transition-all duration-300 shadow-[0_0_25px_rgba(255,122,0,0.45)] hover:shadow-[0_0_40px_rgba(255,122,0,0.7)] transform hover:-translate-y-1">
+              <i data-lucide="zap" class="w-5 h-5 fill-black text-black"></i>
+              <span>Commander ma carte</span>
+            </a>
+
+            <a href="#how-it-works" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-card hover:bg-brand-card/70 border border-brand-border hover:border-gray-600 text-white font-semibold px-6 py-4 rounded-xl text-base transition-all duration-300">
+              <i data-lucide="play-circle" class="w-5 h-5 text-brand-orange"></i>
+              <span>Découvrir comment ça marche</span>
+            </a>
+          </div>
+
+          <!-- Social Proof Badges -->
+          <div class="pt-6 border-t border-brand-border/60 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-gray-400">
+            <div class="flex items-center gap-1.5">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-orange"></i>
+              <span>Sans Abonnement</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-orange"></i>
+              <span>Compatible iOS & Android</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-orange"></i>
+              <span>Paiement à la Livraison</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Visual: 3D High-End NFC Card Mockup -->
+        <div class="lg:col-span-5 flex items-center justify-center perspective-container">
+          <div class="relative w-full max-w-sm sm:max-w-md animate-float">
+            
+            <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+              <div class="w-64 h-64 rounded-full border border-brand-orange/30 animate-radar"></div>
+              <div class="w-48 h-48 rounded-full border border-brand-orange/40 animate-radar" style="animation-delay: 0.8s;"></div>
+            </div>
+
+            <!-- PREMIUM NFC CARD MOCKUP -->
+            <div class="nfc-card-3d relative w-full aspect-[1.586/1] bg-gradient-to-br from-[#1b1b22] via-[#0f0f14] to-[#08080a] border border-white/10 rounded-2xl p-6 sm:p-7 flex flex-col justify-between overflow-hidden shadow-2xl backdrop-blur-md">
+              
+              <div class="absolute -right-16 -top-16 w-56 h-56 bg-brand-orange/15 rounded-full blur-3xl pointer-events-none"></div>
+              <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#FF7A00_1px,transparent_1px)] [background-size:16px_16px]"></div>
+
+              <div class="flex items-center justify-between relative z-10">
+                <div class="w-11 h-9 rounded-md bg-gradient-to-br from-amber-200 via-yellow-500 to-amber-600 border border-amber-300/40 p-1 flex flex-col justify-between shadow-inner">
+                  <div class="w-full h-0.5 bg-black/20"></div>
+                  <div class="w-full h-0.5 bg-black/20"></div>
+                  <div class="w-full h-0.5 bg-black/20"></div>
+                </div>
+
+                <div class="flex items-center gap-1 text-brand-orange">
+                  <i data-lucide="wifi" class="w-7 h-7 rotate-90 stroke-[2.5] drop-shadow-[0_0_8px_rgba(255,122,0,0.8)]"></i>
+                </div>
+              </div>
+
+              <div class="relative z-10 my-auto text-left">
+                <div class="flex items-center text-3xl sm:text-4xl font-extrabold tracking-wider font-display">
+                  <span class="text-white tracking-tight">VISION</span>
+                  <span class="ml-2.5 px-3 py-0.5 rounded-xl border-2 border-brand-orange text-brand-orange relative text-2xl sm:text-3xl shadow-[0_0_20px_rgba(255,122,0,0.5)]">
+                    TAP
+                    <span class="absolute -bottom-0.5 right-2 w-2.5 h-0.5 bg-[#0e0e13]"></span>
+                  </span>
+                </div>
+                <p class="text-[10px] tracking-[0.25em] text-gray-400 uppercase mt-1">Smart NFC Business Card</p>
+              </div>
+
+              <div class="flex items-end justify-between relative z-10 pt-2 border-t border-white/5 text-xs text-gray-400 font-mono">
+                <div>
+                  <span class="text-[10px] text-gray-500 block">CARD HOLDER</span>
+                  <span class="text-white font-semibold tracking-wider uppercase text-xs">VOTRE NOM COMPLET</span>
+                </div>
+                <div class="flex items-center gap-1.5 text-brand-orange text-xs font-semibold font-sans">
+                  <span class="w-2 h-2 rounded-full bg-brand-orange animate-pulse"></span>
+                  <span>TAP & CONNECT</span>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="absolute -bottom-4 -left-4 bg-brand-dark/95 border border-brand-orange/40 backdrop-blur-xl px-4 py-2 rounded-xl shadow-xl flex items-center gap-3">
+              <div class="w-8 h-8 rounded-lg bg-brand-orange/20 flex items-center justify-center text-brand-orange">
+                <i data-lucide="smartphone" class="w-4 h-4"></i>
+              </div>
+              <div class="text-left">
+                <p class="text-xs font-bold text-white">100% Instantané</p>
+                <p class="text-[10px] text-gray-400">Aucune App Requise</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- 2. TRUST HIGHLIGHTS BAR -->
+  <!-- ============================================== -->
+  <section class="py-8 bg-brand-dark/80 border-y border-brand-border relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center md:text-left">
+        
+        <div class="flex flex-col md:flex-row items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange shrink-0">
+            <i data-lucide="truck" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-white">Livraison Gratuite</h4>
+            <p class="text-xs text-gray-400">Partout au Maroc en 24h/48h</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange shrink-0">
+            <i data-lucide="banknote" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-white">Paiement à la livraison</h4>
+            <p class="text-xs text-gray-400">Payez en espèces à la réception</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange shrink-0">
+            <i data-lucide="infinity" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-white">Sans Abonnement</h4>
+            <p class="text-xs text-gray-400">Achat unique, utilisable à vie</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange shrink-0">
+            <i data-lucide="shield-check" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-white">Qualité Premium</h4>
+            <p class="text-xs text-gray-400">Puce haute vitesse résistante à l'eau</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- 3. C'EST QUOI UNE CARTE NFC ? -->
+  <!-- ============================================== -->
+  <section id="about" class="py-20 md:py-28 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/30 text-brand-orange text-xs font-semibold uppercase tracking-wider">
+          Définition & Utilité
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white font-display">
+          C'est quoi exactement une <span class="text-brand-orange">Carte NFC ?</span>
+        </h2>
+        <p class="text-gray-300 text-base sm:text-lg">
+          Une carte intelligente dotée d'une puce sans contact qui transmet instantanément l'intégralité de vos profils, liens et coordonnées professionnelles sur n'importe quel smartphone avec un simple contact.
+        </p>
+      </div>
+
+      <!-- What you can share grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+        
+        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+            <i data-lucide="message-circle" class="w-6 h-6"></i>
+          </div>
+          <h4 class="text-white font-bold text-sm">WhatsApp</h4>
+          <p class="text-[11px] text-gray-400">Lien direct de chat</p>
+        </div>
+
+        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
+          <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400">
+            <i data-lucide="instagram" class="w-6 h-6"></i>
+          </div>
+          <h4 class="text-white font-bold text-sm">Instagram</h4>
+          <p class="text-[11px] text-gray-400">Profil & portfolio</p>
+        </div>
+
+        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
+          <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
+            <i data-lucide="video" class="w-6 h-6"></i>
+          </div>
+          <h4 class="text-white font-bold text-sm">TikTok</h4>
+          <p class="text-[11px] text-gray-400">Compte & vidéos</p>
+        </div>
+
+        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
+          <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400">
+            <i data-lucide="facebook" class="w-6 h-6"></i>
+          </div>
+          <h4 class="text-white font-bold text-sm">Facebook</h4>
+          <p class="text-[11px] text-gray-400">Page entreprise</p>
+        </div>
+
+        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
+          <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange">
+            <i data-lucide="globe" class="w-6 h-6"></i>
+          </div>
+          <h4 class="text-white font-bold text-sm">Site Web</h4>
+          <p class="text-[11px] text-gray-400">Boutique & portfolio</p>
+        </div>
+
+        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
+          <div class="w-12 h-12 rounded-xl bg-green-500/10 border border-green-500/30 flex items-center justify-center text-green-400">
+            <i data-lucide="phone-call" class="w-6 h-6"></i>
+          </div>
+          <h4 class="text-white font-bold text-sm">Téléphone</h4>
+          <p class="text-[11px] text-gray-400">Appel immédiat</p>
+        </div>
+
+        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400">
+            <i data-lucide="mail" class="w-6 h-6"></i>
+          </div>
+          <h4 class="text-white font-bold text-sm">Email Pro</h4>
+          <p class="text-[11px] text-gray-400">Envoi en 1-clic</p>
+        </div>
+
+        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
+          <div class="w-12 h-12 rounded-xl bg-red-500/10 border border-red-500/30 flex items-center justify-center text-red-400">
+            <i data-lucide="map-pin" class="w-6 h-6"></i>
+          </div>
+          <h4 class="text-white font-bold text-sm">Google Maps</h4>
+          <p class="text-[11px] text-gray-400">Localisation GPS</p>
+        </div>
+
+        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
+          <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400">
+            <i data-lucide="contact" class="w-6 h-6"></i>
+          </div>
+          <h4 class="text-white font-bold text-sm">Contact vCard</h4>
+          <p class="text-[11px] text-gray-400">Enregistrement direct</p>
+        </div>
+
+        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
+          <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400">
+            <i data-lucide="file-text" class="w-6 h-6"></i>
+          </div>
+          <h4 class="text-white font-bold text-sm">Menu & PDF</h4>
+          <p class="text-[11px] text-gray-400">Brochures & tarifs</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- 4. COMMENT ÇA MARCHE ? (3 ÉTAPES) -->
+  <!-- ============================================== -->
+  <section id="how-it-works" class="py-20 bg-brand-dark/50 border-t border-brand-border relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/30 text-brand-orange text-xs font-semibold uppercase tracking-wider">
+          Simplicité Absolue
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white font-display">
+          Comment ça marche en <span class="text-brand-orange">3 étapes ?</span>
+        </h2>
+        <p class="text-gray-300 text-base">Aucune application n'est nécessaire pour vous ou pour vos clients.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+        
+        <div class="relative bg-brand-card/90 border border-brand-border rounded-2xl p-8 flex flex-col justify-between hover:border-brand-orange/40 transition-all duration-300 group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-5xl font-black text-white/10 group-hover:text-brand-orange/30 transition-colors font-display">01</span>
+              <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange">
+                <i data-lucide="hand" class="w-6 h-6"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-white group-hover:text-brand-orange transition-colors">Approchez la carte</h3>
+            <p class="text-sm text-gray-300 leading-relaxed">
+              Tenez simplement votre carte VISION TAP et approchez-la du dos ou du haut du smartphone de votre interlocuteur.
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-brand-border/60 flex items-center gap-2 text-xs text-brand-orange font-semibold">
+            <span>Distance : 1 à 3 cm</span>
+          </div>
+        </div>
+
+        <div class="relative bg-brand-card/90 border border-brand-orange/40 rounded-2xl p-8 flex flex-col justify-between shadow-[0_0_30px_rgba(255,122,0,0.1)] group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-5xl font-black text-brand-orange/30 font-display">02</span>
+              <div class="w-12 h-12 rounded-xl bg-brand-orange flex items-center justify-center text-black">
+                <i data-lucide="zap" class="w-6 h-6"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-white">Un simple Tap</h3>
+            <p class="text-sm text-gray-300 leading-relaxed">
+              La technologie sans contact NFC déclenche une notification instantanée et automatique sur le téléphone de votre contact.
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-brand-border/60 flex items-center gap-2 text-xs text-brand-orange font-semibold">
+            <span>Détection instantanée (< 1 sec)</span>
+          </div>
+        </div>
+
+        <div class="relative bg-brand-card/90 border border-brand-border rounded-2xl p-8 flex flex-col justify-between hover:border-brand-orange/40 transition-all duration-300 group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-5xl font-black text-white/10 group-hover:text-brand-orange/30 transition-colors font-display">03</span>
+              <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange">
+                <i data-lucide="user-check" class="w-6 h-6"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-white group-hover:text-brand-orange transition-colors">Vos infos s'affichent</h3>
+            <p class="text-sm text-gray-300 leading-relaxed">
+              Votre page de profil s'ouvre directement : votre client peut enregistrer vos coordonnées, vous écrire sur WhatsApp ou visiter votre site web.
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-brand-border/60 flex items-center gap-2 text-xs text-brand-orange font-semibold">
+            <span>Enregistrement 1-Clic dans les contacts</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- 5. POURQUOI VISION TAP ? (AVANTAGES) -->
+  <!-- ============================================== -->
+  <section id="benefits" class="py-20 md:py-28 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/30 text-brand-orange text-xs font-semibold uppercase tracking-wider">
+          Les Bénéfices
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white font-display">
+          Pourquoi choisir <span class="text-brand-orange">VISION TAP ?</span>
+        </h2>
+        <p class="text-gray-300 text-base">Finies les cartes en papier jetées à la poubelle. Passez au niveau supérieur de crédibilité.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="glass-panel glass-panel-hover p-6 rounded-2xl flex gap-4 items-start">
+          <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange shrink-0">
+            <i data-lucide="cpu" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-white mb-1">Technologie NFC Dernière Génération</h3>
+            <p class="text-xs sm:text-sm text-gray-400">Puce haute sensibilité pour une transmission rapide, fiable et sans friction.</p>
+          </div>
+        </div>
+
+        <div class="glass-panel glass-panel-hover p-6 rounded-2xl flex gap-4 items-start">
+          <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange shrink-0">
+            <i data-lucide="sparkles" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-white mb-1">Design Noir & Orange Premium</h3>
+            <p class="text-xs sm:text-sm text-gray-400">Finition élégante et soignée qui donne immédiatement une impression haut de gamme.</p>
+          </div>
+        </div>
+
+        <div class="glass-panel glass-panel-hover p-6 rounded-2xl flex gap-4 items-start">
+          <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange shrink-0">
+            <i data-lucide="app-window" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-white mb-1">Pas Besoin d'Application</h3>
+            <p class="text-xs sm:text-sm text-gray-400">Fonctionne nativement sur iPhone et Android sans aucune installation préalable.</p>
+          </div>
+        </div>
+
+        <div class="glass-panel glass-panel-hover p-6 rounded-2xl flex gap-4 items-start">
+          <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange shrink-0">
+            <i data-lucide="refresh-cw" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-white mb-1">Réutilisable & Écologique</h3>
+            <p class="text-xs sm:text-sm text-gray-400">Une seule carte pour toujours. Économisez des milliers de dirhams d'impressions papier.</p>
+          </div>
+        </div>
+
+        <div class="glass-panel glass-panel-hover p-6 rounded-2xl flex gap-4 items-start">
+          <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange shrink-0">
+            <i data-lucide="smartphone" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-white mb-1">Compatibilité Universelle</h3>
+            <p class="text-xs sm:text-sm text-gray-400">Compatible avec 99% des smartphones actuels (Apple iOS et Android).</p>
+          </div>
+        </div>
+
+        <div class="glass-panel glass-panel-hover p-6 rounded-2xl flex gap-4 items-start">
+          <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange shrink-0">
+            <i data-lucide="briefcase" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-white mb-1">Impact & Image Professionnelle</h3>
+            <p class="text-xs sm:text-sm text-gray-400">Faites sensation auprès de vos clients et partenaires lors de chaque rencontre d'affaires.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- 6. POUR QUI ? (CIBLES) -->
+  <!-- ============================================== -->
+  <section id="targets" class="py-20 bg-brand-dark/40 border-y border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/30 text-brand-orange text-xs font-semibold uppercase tracking-wider">
+          Polyvalence
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white font-display">
+          À qui s'adresse <span class="text-brand-orange">VISION TAP ?</span>
+        </h2>
+        <p class="text-gray-300 text-base">Conçue pour toute personne ou entreprise souhaitant développer son réseau avec modernité.</p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        
+        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
+          <div class="text-2xl mb-2">💼</div>
+          <h4 class="font-bold text-white text-sm">Entrepreneurs</h4>
+          <p class="text-[11px] text-gray-400 mt-1">Fondateurs & Dirigeants</p>
+        </div>
+
+        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
+          <div class="text-2xl mb-2">📈</div>
+          <h4 class="font-bold text-white text-sm">Commerciaux</h4>
+          <p class="text-[11px] text-gray-400 mt-1">Ventes & Prospection</p>
+        </div>
+
+        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
+          <div class="text-2xl mb-2">💻</div>
+          <h4 class="font-bold text-white text-sm">Freelancers</h4>
+          <p class="text-[11px] text-gray-400 mt-1">Designers & Devs</p>
+        </div>
+
+        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
+          <div class="text-2xl mb-2">📸</div>
+          <h4 class="font-bold text-white text-sm">Créateurs de Contenu</h4>
+          <p class="text-[11px] text-gray-400 mt-1">Influenceurs & Médias</p>
+        </div>
+
+        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
+          <div class="text-2xl mb-2">🍽️</div>
+          <h4 class="font-bold text-white text-sm">Restaurants & Cafés</h4>
+          <p class="text-[11px] text-gray-400 mt-1">Menu & Avis Google</p>
+        </div>
+
+        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
+          <div class="text-2xl mb-2">✂️</div>
+          <h4 class="font-bold text-white text-sm">Salons de Beauté</h4>
+          <p class="text-[11px] text-gray-400 mt-1">Spas & Coiffure</p>
+        </div>
+
+        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
+          <div class="text-2xl mb-2">🏢</div>
+          <h4 class="font-bold text-white text-sm">Agents Immobiliers</h4>
+          <p class="text-[11px] text-gray-400 mt-1">Courtiers & Agences</p>
+        </div>
+
+        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
+          <div class="text-2xl mb-2">👥</div>
+          <h4 class="font-bold text-white text-sm">Entreprises</h4>
+          <p class="text-[11px] text-gray-400 mt-1">Équipes & Collaborateurs</p>
+        </div>
+
+        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
+          <div class="text-2xl mb-2">🛍️</div>
+          <h4 class="font-bold text-white text-sm">Commerçants</h4>
+          <p class="text-[11px] text-gray-400 mt-1">Boutiques & Magasins</p>
+        </div>
+
+        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
+          <div class="text-2xl mb-2">🩺</div>
+          <h4 class="font-bold text-white text-sm">Professionnels</h4>
+          <p class="text-[11px] text-gray-400 mt-1">Médecins & Avocats</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- 7. SECTION OFFRE ACTUELLE -->
+  <!-- ============================================== -->
+  <section class="py-20 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="gradient-border-box p-8 sm:p-12 text-center relative overflow-hidden shadow-[0_0_50px_rgba(255,122,0,0.15)]">
+        
+        <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-64 h-64 bg-brand-orange/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-orange text-black text-xs sm:text-sm font-black tracking-wider uppercase mb-6 shadow-[0_0_20px_rgba(255,122,0,0.5)]">
+          🔥 OFFRE ACTUELLE LIMITÉE
+        </div>
+
+        <h3 class="text-3xl sm:text-5xl font-extrabold text-white font-display mb-4">
+          Pack Carte NFC VISION TAP
+        </h3>
+        
+        <p class="text-gray-300 max-w-xl mx-auto mb-8 text-sm sm:text-base">
+          Votre carte NFC configurée et prête à l'emploi. Configuration rapide de vos informations et assistance complète.
+        </p>
+
+        <div class="bg-brand-black/60 border border-brand-border rounded-2xl p-6 max-w-md mx-auto mb-8">
+          <div class="text-xs text-gray-400 uppercase tracking-wider mb-1">Prix Tout Inclus</div>
+          <div class="flex items-center justify-center gap-3">
+            <span class="text-gray-500 line-through text-2xl font-bold">399 DH</span>
+            <span class="text-5xl sm:text-6xl font-black text-white font-display">199 <span class="text-brand-orange text-2xl font-extrabold">DH</span></span>
+          </div>
+          <div class="mt-3 inline-flex items-center gap-2 text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full text-xs font-bold">
+            <i data-lucide="check" class="w-3.5 h-3.5"></i>
+            <span>LIVRAISON 100% GRATUITE PARTOUT AU MAROC</span>
+          </div>
+        </div>
+
+        <a href="#commander" class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-brand-orange to-brand-accent hover:from-brand-orangeGlow hover:to-brand-orange text-black font-extrabold px-10 py-4 rounded-xl text-lg transition-all duration-300 shadow-[0_0_30px_rgba(255,122,0,0.5)] hover:shadow-[0_0_50px_rgba(255,122,0,0.8)] transform hover:scale-105">
+          <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+          <span>Commander maintenant</span>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- 8. FORMULAIRE DE COMMANDE DIRECT (MAIN SECTION) -->
+  <!-- ============================================== -->
+  <section id="commander" class="py-20 md:py-24 bg-brand-dark/90 border-t border-brand-border relative">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title -->
+      <div class="text-center space-y-3 mb-10">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-orange/10 border border-brand-orange/30 text-brand-orange text-xs font-bold uppercase tracking-wider">
+          Confirmation Rapide
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white font-display">
+          Commandez votre carte <span class="text-brand-orange">VISION TAP</span>
+        </h2>
+        <p class="text-gray-300 text-sm sm:text-base">
+          Remplissez le formulaire ci-dessous et nous vous contacterons immédiatement par téléphone/WhatsApp pour confirmer votre commande.
+        </p>
+      </div>
+
+      <!-- SUCCESS MESSAGE BOX -->
+      <div id="successMessage" class="hidden mb-8 bg-emerald-950/70 border-2 border-emerald-500/60 rounded-2xl p-6 sm:p-8 text-center space-y-3 animate-fade-in shadow-[0_0_30px_rgba(16,185,129,0.2)]">
+        <div class="w-16 h-16 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto mb-2">
+          <i data-lucide="party-popper" class="w-8 h-8"></i>
+        </div>
+        <h3 class="text-2xl font-extrabold text-white font-display">🎉 Votre commande a bien été enregistrée !</h3>
+        <p class="text-gray-300 text-sm sm:text-base max-w-lg mx-auto">
+          Nous vous contacterons très prochainement par téléphone pour confirmer les détails et lancer l'expédition de votre carte NFC.
+        </p>
+        <div class="pt-3">
+          <button type="button" onclick="resetFormState()" class="text-xs text-brand-orange underline hover:text-white transition">
+            Passer une autre commande
+          </button>
+        </div>
+      </div>
+
+      <!-- ERROR MESSAGE BOX -->
+      <div id="errorMessage" class="hidden mb-8 bg-red-950/60 border border-red-500/50 rounded-2xl p-5 text-center text-sm text-red-200">
+        <div class="flex items-center justify-center gap-2 font-bold mb-1 text-red-400">
+          <i data-lucide="alert-circle" class="w-5 h-5"></i>
+          <span>Une erreur est survenue. Veuillez réessayer.</span>
+        </div>
+        <p>Veuillez vérifier votre connexion ou nous contacter directement sur WhatsApp.</p>
+      </div>
+
+      <!-- ORDER FORM CONTAINER -->
+      <div id="formContainer" class="bg-brand-card/95 border border-brand-border rounded-2xl p-6 sm:p-10 shadow-2xl relative">
+        
+        <form id="orderForm" class="space-y-6">
+          
+          <div>
+            <label for="nom" class="block text-xs sm:text-sm font-semibold text-gray-200 mb-2">
+              Nom complet <span class="text-brand-orange">*</span>
+            </label>
+            <div class="relative">
+              <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-gray-500">
+                <i data-lucide="user" class="w-4 h-4"></i>
+              </div>
+              <input type="text" id="nom" name="nom" required placeholder="Ex: Mohamed Alami"
+                class="w-full bg-[#0d0d12] border border-brand-border focus:border-brand-orange focus:ring-1 focus:ring-brand-orange text-white text-sm rounded-xl pl-10 pr-4 py-3.5 outline-none transition duration-200 placeholder-gray-600">
+            </div>
+          </div>
+
+          <div>
+            <label for="telephone" class="block text-xs sm:text-sm font-semibold text-gray-200 mb-2">
+              Numéro de Téléphone (WhatsApp) <span class="text-brand-orange">*</span>
+            </label>
+            <div class="relative">
+              <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-gray-500">
+                <i data-lucide="phone" class="w-4 h-4"></i>
+              </div>
+              <input type="tel" id="telephone" name="telephone" required placeholder="Ex: 06 60 71 81 91"
+                class="w-full bg-[#0d0d12] border border-brand-border focus:border-brand-orange focus:ring-1 focus:ring-brand-orange text-white text-sm rounded-xl pl-10 pr-4 py-3.5 outline-none transition duration-200 placeholder-gray-600">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="ville" class="block text-xs sm:text-sm font-semibold text-gray-200 mb-2">
+                Ville <span class="text-brand-orange">*</span>
+              </label>
+              <div class="relative">
+                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-gray-500">
+                  <i data-lucide="map" class="w-4 h-4"></i>
+                </div>
+                <input type="text" id="ville" name="ville" required placeholder="Ex: Casablanca, Rabat, Marrakech..."
+                  class="w-full bg-[#0d0d12] border border-brand-border focus:border-brand-orange focus:ring-1 focus:ring-brand-orange text-white text-sm rounded-xl pl-10 pr-4 py-3.5 outline-none transition duration-200 placeholder-gray-600">
+              </div>
+            </div>
+
+            <div>
+              <label for="adresse" class="block text-xs sm:text-sm font-semibold text-gray-200 mb-2">
+                Adresse de Livraison <span class="text-brand-orange">*</span>
+              </label>
+              <div class="relative">
+                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-gray-500">
+                  <i data-lucide="home" class="w-4 h-4"></i>
+                </div>
+                <input type="text" id="adresse" name="adresse" required placeholder="Ex: Quartier, Rue, N° Immeuble / Villa"
+                  class="w-full bg-[#0d0d12] border border-brand-border focus:border-brand-orange focus:ring-1 focus:ring-brand-orange text-white text-sm rounded-xl pl-10 pr-4 py-3.5 outline-none transition duration-200 placeholder-gray-600">
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <label for="infosCarte" class="block text-xs sm:text-sm font-semibold text-gray-200 mb-1">
+              Informations à inclure sur la carte <span class="text-brand-orange">*</span>
+            </label>
+            <p class="text-xs text-gray-400 mb-2">
+              Indiquez les liens & coordonnées que vous souhaitez intégrer (Ex: WhatsApp, Instagram @votrecompte, Téléphone, Email, Site web, TikTok, etc.)
+            </p>
+            <textarea id="infosCarte" name="infosCarte" rows="3" required placeholder="Ex: WhatsApp: 06XXXXXXXX, Instagram: @monprofil, Email: contact@monsite.ma, Métier: Consultant..."
+              class="w-full bg-[#0d0d12] border border-brand-border focus:border-brand-orange focus:ring-1 focus:ring-brand-orange text-white text-sm rounded-xl p-3.5 outline-none transition duration-200 placeholder-gray-600"></textarea>
+          </div>
+
+          <!-- Quantity & Dynamic Pricing -->
+          <div class="bg-brand-black/70 border border-brand-border/80 rounded-xl p-4 sm:p-5 space-y-4">
+            <div class="flex items-center justify-between">
+              <div>
+                <span class="text-sm font-bold text-white block">Quantité de cartes</span>
+                <span class="text-xs text-gray-400">Prix unitaire : 199 DH</span>
+              </div>
+              
+              <div class="flex items-center border border-brand-border rounded-xl bg-brand-card overflow-hidden">
+                <button type="button" id="btnMinus" class="px-3.5 py-2 text-gray-300 hover:text-white hover:bg-brand-orange/20 transition">
+                  <i data-lucide="minus" class="w-4 h-4"></i>
+                </button>
+                <span id="qtyDisplay" class="px-4 py-2 text-sm font-bold text-white min-w-[2.5rem] text-center font-mono">1</span>
+                <button type="button" id="btnPlus" class="px-3.5 py-2 text-gray-300 hover:text-white hover:bg-brand-orange/20 transition">
+                  <i data-lucide="plus" class="w-4 h-4"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="border-t border-brand-border/60 pt-3 space-y-2 text-xs sm:text-sm">
+              <div class="flex justify-between text-gray-300">
+                <span>Sous-total (<span id="summaryQty">1</span> carte<span id="pluralS"></span>) :</span>
+                <span id="summarySubtotal" class="font-semibold text-white">199 DH</span>
+              </div>
+              <div class="flex justify-between text-emerald-400 font-medium">
+                <span class="flex items-center gap-1"><i data-lucide="truck" class="w-3.5 h-3.5"></i> Livraison au Maroc :</span>
+                <span class="font-bold uppercase">GRATUITE (0 DH)</span>
+              </div>
+              <div class="flex justify-between items-center text-base sm:text-lg font-black text-white pt-2 border-t border-brand-border">
+                <span>TOTAL À PAYER :</span>
+                <span id="totalDisplay" class="text-brand-orange font-display text-xl sm:text-2xl">199 DH</span>
+              </div>
+            </div>
+          </div>
+
+          <input type="hidden" id="quantiteInput" name="quantite" value="1">
+
+          <button type="submit" id="submitBtn" class="w-full bg-gradient-to-r from-brand-orange to-brand-accent hover:from-brand-orangeGlow hover:to-brand-orange text-black font-extrabold py-4 px-6 rounded-xl text-base sm:text-lg transition-all duration-300 shadow-[0_0_25px_rgba(255,122,0,0.45)] hover:shadow-[0_0_40px_rgba(255,122,0,0.7)] flex items-center justify-center gap-3 group disabled:opacity-50 disabled:cursor-not-allowed">
+            <span id="btnIcon"><i data-lucide="check-circle" class="w-5 h-5"></i></span>
+            <span id="btnText">Commander ma carte — 199 DH</span>
+          </button>
+
+          <p class="text-[11px] text-gray-500 text-center flex items-center justify-center gap-1.5 pt-1">
+            <i data-lucide="lock" class="w-3.5 h-3.5 text-gray-400"></i>
+            Paiement 100% sécurisé en espèces à la livraison. Pas d'avance requise.
+          </p>
+
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- 9. FAQ ACCORDION SECTION -->
+  <!-- ============================================== -->
+  <section id="faq" class="py-20 bg-brand-black relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/30 text-brand-orange text-xs font-semibold uppercase tracking-wider">
+          Questions Fréquentes
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-display">
+          Avez-vous des questions ?
+        </h2>
+        <p class="text-gray-300 text-sm">Retrouvez ici toutes les réponses concernant l'utilisation de votre carte VISION TAP.</p>
+      </div>
+
+      <div class="space-y-4">
+        
+        <div class="bg-brand-card border border-brand-border rounded-xl overflow-hidden transition-all duration-200">
+          <button type="button" class="faq-toggle w-full px-6 py-4.5 text-left flex items-center justify-between text-white font-semibold text-sm sm:text-base hover:text-brand-orange transition">
+            <span>Est-ce que la carte fonctionne avec iPhone et Android ?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform duration-200 faq-icon shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-gray-300 text-xs sm:text-sm leading-relaxed border-t border-brand-border/40 pt-3">
+            Oui, absolument. La carte VISION TAP fonctionne avec la quasi-totalité des smartphones modernes : tous les iPhone à partir de l'iPhone XR / iPhone XS et les modèles Android récents équipés du NFC.
+          </div>
+        </div>
+
+        <div class="bg-brand-card border border-brand-border rounded-xl overflow-hidden transition-all duration-200">
+          <button type="button" class="faq-toggle w-full px-6 py-4.5 text-left flex items-center justify-between text-white font-semibold text-sm sm:text-base hover:text-brand-orange transition">
+            <span>Est-ce qu'il faut installer une application ?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform duration-200 faq-icon shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-gray-300 text-xs sm:text-sm leading-relaxed border-t border-brand-border/40 pt-3">
+            Non, aucune application n'est nécessaire. Ni vous, ni la personne avec qui vous partagez vos informations n'avez besoin de télécharger ou d'installer quoi que ce soit.
+          </div>
+        </div>
+
+        <div class="bg-brand-card border border-brand-border rounded-xl overflow-hidden transition-all duration-200">
+          <button type="button" class="faq-toggle w-full px-6 py-4.5 text-left flex items-center justify-between text-white font-semibold text-sm sm:text-base hover:text-brand-orange transition">
+            <span>Que peut-on mettre sur la carte ?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform duration-200 faq-icon shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-gray-300 text-xs sm:text-sm leading-relaxed border-t border-brand-border/40 pt-3">
+            Vous pouvez y intégrer tous vos réseaux sociaux (WhatsApp, Instagram, TikTok, LinkedIn, Facebook), vos numéros de téléphone, emails, lien de site web, localisation Google Maps, menu restaurant ou catalogue PDF.
+          </div>
+        </div>
+
+        <div class="bg-brand-card border border-brand-border rounded-xl overflow-hidden transition-all duration-200">
+          <button type="button" class="faq-toggle w-full px-6 py-4.5 text-left flex items-center justify-between text-white font-semibold text-sm sm:text-base hover:text-brand-orange transition">
+            <span>La livraison est-elle vraiment gratuite au Maroc ?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform duration-200 faq-icon shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-gray-300 text-xs sm:text-sm leading-relaxed border-t border-brand-border/40 pt-3">
+            Oui, la livraison est 100% offerte partout au Maroc (Casablanca, Rabat, Marrakech, Tanger, Fès, Agadir et toutes les autres villes). Le paiement se fait à la réception en espèces.
+          </div>
+        </div>
+
+        <div class="bg-brand-card border border-brand-border rounded-xl overflow-hidden transition-all duration-200">
+          <button type="button" class="faq-toggle w-full px-6 py-4.5 text-left flex items-center justify-between text-white font-semibold text-sm sm:text-base hover:text-brand-orange transition">
+            <span>Combien coûte la carte ? Y a-t-il un abonnement ?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform duration-200 faq-icon shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-gray-300 text-xs sm:text-sm leading-relaxed border-t border-brand-border/40 pt-3">
+            La carte coûte 199 DH en offre promotionnelle actuelle (au lieu de 399 DH). Il n'y a aucun abonnement mensuel ou annuel. L'achat est unique et la carte est réutilisable à vie.
+          </div>
+        </div>
+
+        <div class="bg-brand-card border border-brand-border rounded-xl overflow-hidden transition-all duration-200">
+          <button type="button" class="faq-toggle w-full px-6 py-4.5 text-left flex items-center justify-between text-white font-semibold text-sm sm:text-base hover:text-brand-orange transition">
+            <span>Est-ce que je peux modifier mes informations plus tard ?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transform transition-transform duration-200 faq-icon shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-gray-300 text-xs sm:text-sm leading-relaxed border-t border-brand-border/40 pt-3">
+            Oui, vous pouvez mettre à jour vos coordonnées et vos liens à tout moment sans devoir changer de carte physique.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- 10. TRUST SECTION -->
+  <!-- ============================================== -->
+  <section class="py-16 bg-brand-dark border-t border-brand-border relative">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+      <h3 class="text-2xl sm:text-3xl font-extrabold text-white font-display">
+        Pourquoi commander chez <span class="text-brand-orange">VISION TAP ?</span>
+      </h3>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-left">
+        <div class="bg-brand-card p-5 rounded-xl border border-brand-border flex items-start gap-3.5">
+          <div class="text-brand-orange font-bold text-lg">✓</div>
+          <div>
+            <h4 class="text-white font-bold text-sm">Livraison gratuite au Maroc</h4>
+            <p class="text-xs text-gray-400 mt-0.5">Expédition rapide sous 24h à 48h.</p>
+          </div>
+        </div>
+
+        <div class="bg-brand-card p-5 rounded-xl border border-brand-border flex items-start gap-3.5">
+          <div class="text-brand-orange font-bold text-lg">✓</div>
+          <div>
+            <h4 class="text-white font-bold text-sm">Commande simple</h4>
+            <p class="text-xs text-gray-400 mt-0.5">Formulaire en 30 secondes sans paiement en ligne obligatoire.</p>
+          </div>
+        </div>
+
+        <div class="bg-brand-card p-5 rounded-xl border border-brand-border flex items-start gap-3.5">
+          <div class="text-brand-orange font-bold text-lg">✓</div>
+          <div>
+            <h4 class="text-white font-bold text-sm">Carte NFC professionnelle</h4>
+            <p class="text-xs text-gray-400 mt-0.5">Matériaux résistants et puce ultra-rapide.</p>
+          </div>
+        </div>
+
+        <div class="bg-brand-card p-5 rounded-xl border border-brand-border flex items-start gap-3.5">
+          <div class="text-brand-orange font-bold text-lg">✓</div>
+          <div>
+            <h4 class="text-white font-bold text-sm">Assistance client WhatsApp</h4>
+            <p class="text-xs text-gray-400 mt-0.5">Support dédié pour vous aider à la configuration.</p>
+          </div>
+        </div>
+
+        <div class="bg-brand-card p-5 rounded-xl border border-brand-border flex items-start gap-3.5">
+          <div class="text-brand-orange font-bold text-lg">✓</div>
+          <div>
+            <h4 class="text-white font-bold text-sm">Solution moderne & pratique</h4>
+            <p class="text-xs text-gray-400 mt-0.5">Valorisez votre image de marque auprès de chaque client.</p>
+          </div>
+        </div>
+
+        <div class="bg-brand-card p-5 rounded-xl border border-brand-border flex items-start gap-3.5">
+          <div class="text-brand-orange font-bold text-lg">✓</div>
+          <div>
+            <h4 class="text-white font-bold text-sm">Paiement à la livraison</h4>
+            <p class="text-xs text-gray-400 mt-0.5">Recevez et vérifiez votre carte avant de payer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- 11. FOOTER -->
+  <!-- ============================================== -->
+  <footer class="bg-brand-black border-t border-brand-border/80 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8 pb-8 border-b border-brand-border/50">
+        
+        <div class="text-center md:text-left space-y-2">
+          <div class="flex items-center justify-center md:justify-start text-2xl font-extrabold tracking-wider font-display select-none">
+            <span class="text-white tracking-tight">VISION</span>
+            <span class="ml-2 px-2 py-0.5 rounded-lg border-2 border-brand-orange text-brand-orange text-lg">
+              TAP
+            </span>
+          </div>
+          <p class="text-xs text-gray-400">Votre identité. Un simple Tap.</p>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-6 text-xs sm:text-sm text-gray-400">
+          <a href="#" class="hover:text-brand-orange transition">Accueil</a>
+          <a href="#how-it-works" class="hover:text-brand-orange transition">Comment ça marche</a>
+          <a href="#benefits" class="hover:text-brand-orange transition">Avantages</a>
+          <a href="#commander" class="hover:text-brand-orange transition">Commander</a>
+          <a href="#faq" class="hover:text-brand-orange transition">FAQ</a>
+        </div>
+
+        <div>
+          <a id="footerWhatsappBtn" href="#" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-400 border border-emerald-500/40 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>Nous contacter sur WhatsApp</span>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="pt-8 text-center text-xs text-gray-500">
+        <p>&copy; 2026 VISION TAP. Tous droits réservés. Conçu pour les professionnels ambitieux au Maroc.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================== -->
+  <!-- 12. FLOATING WHATSAPP BUTTON -->
+  <!-- ============================================== -->
+  <aside aria-label="Support WhatsApp">
+    <a id="floatingWhatsappBtn" href="#" target="_blank"
+      class="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 bg-[#25D366] hover:bg-[#20ba59] text-white p-3.5 sm:px-4 sm:py-3 rounded-full shadow-[0_4px_25px_rgba(37,211,102,0.5)] transition-all duration-300 transform hover:scale-105 group"
+      aria-label="Contacter le support client sur WhatsApp">
+      <i data-lucide="message-circle" class="w-6 h-6 fill-white text-[#25D366]"></i>
+      <span class="hidden sm:inline font-bold text-xs text-white tracking-wide">Commander via WhatsApp</span>
+    </a>
+  </aside>
+
+  <!-- ============================================== -->
+  <!-- JAVASCRIPT LOGIC & GOOGLE APPS SCRIPT SYNC -->
+  <!-- ============================================== -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    /* -------------------------------------------------------------
+       CONFIG & VARIABLES
+    ------------------------------------------------------------- */
+    const WHATSAPP_NUMBER = "212660718191";
+    const WHATSAPP_DEFAULT_MSG = encodeURIComponent("Bonjour, Salam ! Je suis intéressé(e) par la carte NFC VISION TAP à 199 DH (Livraison Gratuite). J'aimerais avoir plus de détails et passer commande.");
+    const UNIT_PRICE = 199;
+    
+    // Web App URL الخاص بـ Google Apps Script
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxPvOzYx5AJH5F9M3W34QJCYXjE8g2r77CN3D_6m44t-uPdIjSjGSPqCaFpTFuoAMb8/exec";
+
+    // Setup WhatsApp Links
+    const waFullUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_DEFAULT_MSG}`;
+    const floatingWa = document.getElementById("floatingWhatsappBtn");
+    const footerWa = document.getElementById("footerWhatsappBtn");
+    if (floatingWa) floatingWa.href = waFullUrl;
+    if (footerWa) footerWa.href = waFullUrl;
+
+    /* -------------------------------------------------------------
+       DYNAMIC QUANTITY & TOTAL CALCULATOR
+    ------------------------------------------------------------- */
+    let currentQuantity = 1;
+    const qtyDisplay = document.getElementById('qtyDisplay');
+    const quantiteInput = document.getElementById('quantiteInput');
+    const summaryQty = document.getElementById('summaryQty');
+    const summarySubtotal = document.getElementById('summarySubtotal');
+    const totalDisplay = document.getElementById('totalDisplay');
+    const btnText = document.getElementById('btnText');
+    const pluralS = document.getElementById('pluralS');
+
+    function updatePricing() {
+      const total = currentQuantity * UNIT_PRICE;
+      qtyDisplay.textContent = currentQuantity;
+      quantiteInput.value = currentQuantity;
+      summaryQty.textContent = currentQuantity;
+      pluralS.textContent = currentQuantity > 1 ? 's' : '';
+      summarySubtotal.textContent = `${total} DH`;
+      totalDisplay.textContent = `${total} DH`;
+      btnText.textContent = `Commander ma carte — ${total} DH`;
+    }
+
+    document.getElementById('btnMinus').addEventListener('click', () => {
+      if (currentQuantity > 1) {
+        currentQuantity--;
+        updatePricing();
+      }
+    });
+
+    document.getElementById('btnPlus').addEventListener('click', () => {
+      if (currentQuantity < 20) {
+        currentQuantity++;
+        updatePricing();
+      }
+    });
+
+    /* -------------------------------------------------------------
+       FAQ ACCORDION TOGGLE
+    ------------------------------------------------------------- */
+    document.querySelectorAll('.faq-toggle').forEach(button => {
+      button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('.faq-icon');
+        const isHidden = content.classList.contains('hidden');
+
+        document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+        document.querySelectorAll('.faq-icon').forEach(i => i.classList.remove('rotate-180'));
+
+        if (isHidden) {
+          content.classList.remove('hidden');
+          icon.classList.add('rotate-180');
+        }
+      });
+    });
+
+    /* -------------------------------------------------------------
+       FORM SUBMISSION & GOOGLE APPS SCRIPT INTEGRATION (SINGLE HANDLER)
+    ------------------------------------------------------------- */
+    const orderForm = document.getElementById('orderForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const successMessage = document.getElementById('successMessage');
+    const errorMessage = document.getElementById('errorMessage');
+
+    orderForm.addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      // 1. Validation de base des champs requis
+      const nom = document.getElementById('nom').value.trim();
+      const telephone = document.getElementById('telephone').value.trim();
+      const adresse = document.getElementById('adresse').value.trim();
+      const ville = document.getElementById('ville').value.trim();
+      const infosCarte = document.getElementById('infosCarte').value.trim();
+      const quantite = parseInt(quantiteInput.value, 10) || 1;
+      const prix = quantite * UNIT_PRICE;
+
+      if (!nom || !telephone || !adresse || !ville || !infosCarte) {
+        alert("Veuillez remplir tous les champs obligatoires.");
+        return;
+      }
+
+      // 2. Loading State & منع النقر المزدوج
+      submitBtn.disabled = true;
+      const originalBtnHtml = submitBtn.innerHTML;
+      submitBtn.innerHTML = `
+        <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+        </svg>
+        <span>Envoi en cours...</span>
+      `;
+      errorMessage.classList.add('hidden');
+
+      // 3. تجهيز الـ Payload
+      const payload = {
+        nom: nom,
+        telephone: telephone,
+        adresse: adresse,
+        ville: ville,
+        infosCarte: infosCarte,
+        quantite: quantite,
+        prix: prix
+      };
+
+      // 4. إرسال البيانات إلى Google Apps Script
+      try {
+        await fetch(GOOGLE_SCRIPT_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          cache: 'no-cache',
+          headers: {
+            'Content-Type': 'text/plain;charset=utf-8'
+          },
+          body: JSON.stringify(payload)
+        });
+
+        // 5. حالة النجاح (Success State)
+        orderForm.reset();
+        currentQuantity = 1;
+        updatePricing();
+
+        orderForm.classList.add('hidden');
+        successMessage.classList.remove('hidden');
+        lucide.createIcons();
+
+        // التمرير التلقائي لرسالة النجاح
+        successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      } catch (err) {
+        console.error("Erreur lors de l'envoi de la commande:", err);
+        errorMessage.classList.remove('hidden');
+        errorMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnHtml;
+        lucide.createIcons();
+      }
+    });
+
+    function resetFormState() {
+      orderForm.classList.remove('hidden');
+      successMessage.classList.add('hidden');
+      errorMessage.classList.add('hidden');
+      orderForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  </script>
+</body>
+</html>
