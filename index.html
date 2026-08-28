@@ -164,7 +164,7 @@
       <a href="#" class="flex items-center gap-2 group">
         <div class="flex items-center text-2xl md:text-3xl font-extrabold tracking-wider font-display select-none">
           <span class="text-white tracking-tight">VISION</span>
-          <span class="ml-2 px-2.5 py-0.5 rounded-lg border-2 border-brand-orange text-brand-orange relative text-xl md:text-2xl shadow-[0_0_15px_rgba(255,122,0,0.3)]">
+          <span class="ml-2.5 px-2.5 py-0.5 rounded-lg border-2 border-brand-orange text-brand-orange relative text-xl md:text-2xl shadow-[0_0_15px_rgba(255,122,0,0.3)]">
             TAP
             <span class="absolute -bottom-0.5 right-2 w-2 h-0.5 bg-brand-black"></span>
           </span>
@@ -173,6 +173,7 @@
 
       <!-- NAV LINKS (DESKTOP) -->
       <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+        <a href="#commander" class="hover:text-brand-orange transition-colors duration-200">Commander</a>
         <a href="#about" class="hover:text-brand-orange transition-colors duration-200">C'est quoi ?</a>
         <a href="#how-it-works" class="hover:text-brand-orange transition-colors duration-200">Comment ça marche</a>
         <a href="#benefits" class="hover:text-brand-orange transition-colors duration-200">Avantages</a>
@@ -386,402 +387,9 @@
   </section>
 
   <!-- ============================================== -->
-  <!-- 3. C'EST QUOI UNE CARTE NFC ? -->
+  <!-- 3. FORMULAIRE DE COMMANDE DIRECT (PLACÉ EN HAUT) -->
   <!-- ============================================== -->
-  <section id="about" class="py-20 md:py-28 relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/30 text-brand-orange text-xs font-semibold uppercase tracking-wider">
-          Définition & Utilité
-        </div>
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white font-display">
-          C'est quoi exactement une <span class="text-brand-orange">Carte NFC ?</span>
-        </h2>
-        <p class="text-gray-300 text-base sm:text-lg">
-          Une carte intelligente dotée d'une puce sans contact qui transmet instantanément l'intégralité de vos profils, liens et coordonnées professionnelles sur n'importe quel smartphone avec un simple contact.
-        </p>
-      </div>
-
-      <!-- What you can share grid -->
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
-        
-        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
-          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
-            <i data-lucide="message-circle" class="w-6 h-6"></i>
-          </div>
-          <h4 class="text-white font-bold text-sm">WhatsApp</h4>
-          <p class="text-[11px] text-gray-400">Lien direct de chat</p>
-        </div>
-
-        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
-          <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400">
-            <i data-lucide="instagram" class="w-6 h-6"></i>
-          </div>
-          <h4 class="text-white font-bold text-sm">Instagram</h4>
-          <p class="text-[11px] text-gray-400">Profil & portfolio</p>
-        </div>
-
-        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
-          <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
-            <i data-lucide="video" class="w-6 h-6"></i>
-          </div>
-          <h4 class="text-white font-bold text-sm">TikTok</h4>
-          <p class="text-[11px] text-gray-400">Compte & vidéos</p>
-        </div>
-
-        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
-          <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400">
-            <i data-lucide="facebook" class="w-6 h-6"></i>
-          </div>
-          <h4 class="text-white font-bold text-sm">Facebook</h4>
-          <p class="text-[11px] text-gray-400">Page entreprise</p>
-        </div>
-
-        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
-          <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange">
-            <i data-lucide="globe" class="w-6 h-6"></i>
-          </div>
-          <h4 class="text-white font-bold text-sm">Site Web</h4>
-          <p class="text-[11px] text-gray-400">Boutique & portfolio</p>
-        </div>
-
-        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
-          <div class="w-12 h-12 rounded-xl bg-green-500/10 border border-green-500/30 flex items-center justify-center text-green-400">
-            <i data-lucide="phone-call" class="w-6 h-6"></i>
-          </div>
-          <h4 class="text-white font-bold text-sm">Téléphone</h4>
-          <p class="text-[11px] text-gray-400">Appel immédiat</p>
-        </div>
-
-        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
-          <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400">
-            <i data-lucide="mail" class="w-6 h-6"></i>
-          </div>
-          <h4 class="text-white font-bold text-sm">Email Pro</h4>
-          <p class="text-[11px] text-gray-400">Envoi en 1-clic</p>
-        </div>
-
-        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
-          <div class="w-12 h-12 rounded-xl bg-red-500/10 border border-red-500/30 flex items-center justify-center text-red-400">
-            <i data-lucide="map-pin" class="w-6 h-6"></i>
-          </div>
-          <h4 class="text-white font-bold text-sm">Google Maps</h4>
-          <p class="text-[11px] text-gray-400">Localisation GPS</p>
-        </div>
-
-        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
-          <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400">
-            <i data-lucide="contact" class="w-6 h-6"></i>
-          </div>
-          <h4 class="text-white font-bold text-sm">Contact vCard</h4>
-          <p class="text-[11px] text-gray-400">Enregistrement direct</p>
-        </div>
-
-        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
-          <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400">
-            <i data-lucide="file-text" class="w-6 h-6"></i>
-          </div>
-          <h4 class="text-white font-bold text-sm">Menu & PDF</h4>
-          <p class="text-[11px] text-gray-400">Brochures & tarifs</p>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ============================================== -->
-  <!-- 4. COMMENT ÇA MARCHE ? (3 ÉTAPES) -->
-  <!-- ============================================== -->
-  <section id="how-it-works" class="py-20 bg-brand-dark/50 border-t border-brand-border relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/30 text-brand-orange text-xs font-semibold uppercase tracking-wider">
-          Simplicité Absolue
-        </div>
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white font-display">
-          Comment ça marche en <span class="text-brand-orange">3 étapes ?</span>
-        </h2>
-        <p class="text-gray-300 text-base">Aucune application n'est nécessaire pour vous ou pour vos clients.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
-        
-        <div class="relative bg-brand-card/90 border border-brand-border rounded-2xl p-8 flex flex-col justify-between hover:border-brand-orange/40 transition-all duration-300 group">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <span class="text-5xl font-black text-white/10 group-hover:text-brand-orange/30 transition-colors font-display">01</span>
-              <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange">
-                <i data-lucide="hand" class="w-6 h-6"></i>
-              </div>
-            </div>
-            <h3 class="text-xl font-bold text-white group-hover:text-brand-orange transition-colors">Approchez la carte</h3>
-            <p class="text-sm text-gray-300 leading-relaxed">
-              Tenez simplement votre carte VISION TAP et approchez-la du dos ou du haut du smartphone de votre interlocuteur.
-            </p>
-          </div>
-          <div class="pt-6 mt-6 border-t border-brand-border/60 flex items-center gap-2 text-xs text-brand-orange font-semibold">
-            <span>Distance : 1 à 3 cm</span>
-          </div>
-        </div>
-
-        <div class="relative bg-brand-card/90 border border-brand-orange/40 rounded-2xl p-8 flex flex-col justify-between shadow-[0_0_30px_rgba(255,122,0,0.1)] group">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <span class="text-5xl font-black text-brand-orange/30 font-display">02</span>
-              <div class="w-12 h-12 rounded-xl bg-brand-orange flex items-center justify-center text-black">
-                <i data-lucide="zap" class="w-6 h-6"></i>
-              </div>
-            </div>
-            <h3 class="text-xl font-bold text-white">Un simple Tap</h3>
-            <p class="text-sm text-gray-300 leading-relaxed">
-              La technologie sans contact NFC déclenche une notification instantanée et automatique sur le téléphone de votre contact.
-            </p>
-          </div>
-          <div class="pt-6 mt-6 border-t border-brand-border/60 flex items-center gap-2 text-xs text-brand-orange font-semibold">
-            <span>Détection instantanée (&lt; 1 sec)</span>
-          </div>
-        </div>
-
-        <div class="relative bg-brand-card/90 border border-brand-border rounded-2xl p-8 flex flex-col justify-between hover:border-brand-orange/40 transition-all duration-300 group">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <span class="text-5xl font-black text-white/10 group-hover:text-brand-orange/30 transition-colors font-display">03</span>
-              <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange">
-                <i data-lucide="user-check" class="w-6 h-6"></i>
-              </div>
-            </div>
-            <h3 class="text-xl font-bold text-white group-hover:text-brand-orange transition-colors">Vos infos s'affichent</h3>
-            <p class="text-sm text-gray-300 leading-relaxed">
-              Votre page de profil s'ouvre directement : votre client peut enregistrer vos coordonnées, vous écrire sur WhatsApp ou visiter votre site web.
-            </p>
-          </div>
-          <div class="pt-6 mt-6 border-t border-brand-border/60 flex items-center gap-2 text-xs text-brand-orange font-semibold">
-            <span>Enregistrement 1-Clic dans les contacts</span>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ============================================== -->
-  <!-- 5. POURQUOI VISION TAP ? (AVANTAGES) -->
-  <!-- ============================================== -->
-  <section id="benefits" class="py-20 md:py-28 relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/30 text-brand-orange text-xs font-semibold uppercase tracking-wider">
-          Les Bénéfices
-        </div>
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white font-display">
-          Pourquoi choisir <span class="text-brand-orange">VISION TAP ?</span>
-        </h2>
-        <p class="text-gray-300 text-base">Finies les cartes en papier jetées à la poubelle. Passez au niveau supérieur de crédibilité.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        
-        <div class="glass-panel glass-panel-hover p-6 rounded-2xl flex gap-4 items-start">
-          <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange shrink-0">
-            <i data-lucide="cpu" class="w-6 h-6"></i>
-          </div>
-          <div>
-            <h3 class="text-lg font-bold text-white mb-1">Technologie NFC Dernière Génération</h3>
-            <p class="text-xs sm:text-sm text-gray-400">Puce haute sensibilité pour une transmission rapide, fiable et sans friction.</p>
-          </div>
-        </div>
-
-        <div class="glass-panel glass-panel-hover p-6 rounded-2xl flex gap-4 items-start">
-          <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange shrink-0">
-            <i data-lucide="sparkles" class="w-6 h-6"></i>
-          </div>
-          <div>
-            <h3 class="text-lg font-bold text-white mb-1">Design Noir & Orange Premium</h3>
-            <p class="text-xs sm:text-sm text-gray-400">Finition élégante et soignée qui donne immédiatement une impression haut de gamme.</p>
-          </div>
-        </div>
-
-        <div class="glass-panel glass-panel-hover p-6 rounded-2xl flex gap-4 items-start">
-          <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange shrink-0">
-            <i data-lucide="app-window" class="w-6 h-6"></i>
-          </div>
-          <div>
-            <h3 class="text-lg font-bold text-white mb-1">Pas Besoin d'Application</h3>
-            <p class="text-xs sm:text-sm text-gray-400">Fonctionne nativement sur iPhone et Android sans aucune installation préalable.</p>
-          </div>
-        </div>
-
-        <div class="glass-panel glass-panel-hover p-6 rounded-2xl flex gap-4 items-start">
-          <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange shrink-0">
-            <i data-lucide="refresh-cw" class="w-6 h-6"></i>
-          </div>
-          <div>
-            <h3 class="text-lg font-bold text-white mb-1">Réutilisable & Écologique</h3>
-            <p class="text-xs sm:text-sm text-gray-400">Une seule carte pour toujours. Économisez des milliers de dirhams d'impressions papier.</p>
-          </div>
-        </div>
-
-        <div class="glass-panel glass-panel-hover p-6 rounded-2xl flex gap-4 items-start">
-          <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange shrink-0">
-            <i data-lucide="smartphone" class="w-6 h-6"></i>
-          </div>
-          <div>
-            <h3 class="text-lg font-bold text-white mb-1">Compatibilité Universelle</h3>
-            <p class="text-xs sm:text-sm text-gray-400">Compatible avec 99% des smartphones actuels (Apple iOS et Android).</p>
-          </div>
-        </div>
-
-        <div class="glass-panel glass-panel-hover p-6 rounded-2xl flex gap-4 items-start">
-          <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange shrink-0">
-            <i data-lucide="briefcase" class="w-6 h-6"></i>
-          </div>
-          <div>
-            <h3 class="text-lg font-bold text-white mb-1">Impact & Image Professionnelle</h3>
-            <p class="text-xs sm:text-sm text-gray-400">Faites sensation auprès de vos clients et partenaires lors de chaque rencontre d'affaires.</p>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ============================================== -->
-  <!-- 6. POUR QUI ? (CIBLES) -->
-  <!-- ============================================== -->
-  <section id="targets" class="py-20 bg-brand-dark/40 border-y border-brand-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/30 text-brand-orange text-xs font-semibold uppercase tracking-wider">
-          Polyvalence
-        </div>
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white font-display">
-          À qui s'adresse <span class="text-brand-orange">VISION TAP ?</span>
-        </h2>
-        <p class="text-gray-300 text-base">Conçue pour toute personne ou entreprise souhaitant développer son réseau avec modernité.</p>
-      </div>
-
-      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-        
-        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
-          <div class="text-2xl mb-2">💼</div>
-          <h4 class="font-bold text-white text-sm">Entrepreneurs</h4>
-          <p class="text-[11px] text-gray-400 mt-1">Fondateurs & Dirigeants</p>
-        </div>
-
-        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
-          <div class="text-2xl mb-2">📈</div>
-          <h4 class="font-bold text-white text-sm">Commerciaux</h4>
-          <p class="text-[11px] text-gray-400 mt-1">Ventes & Prospection</p>
-        </div>
-
-        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
-          <div class="text-2xl mb-2">💻</div>
-          <h4 class="font-bold text-white text-sm">Freelancers</h4>
-          <p class="text-[11px] text-gray-400 mt-1">Designers & Devs</p>
-        </div>
-
-        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
-          <div class="text-2xl mb-2">📸</div>
-          <h4 class="font-bold text-white text-sm">Créateurs de Contenu</h4>
-          <p class="text-[11px] text-gray-400 mt-1">Influenceurs & Médias</p>
-        </div>
-
-        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
-          <div class="text-2xl mb-2">🍽️</div>
-          <h4 class="font-bold text-white text-sm">Restaurants & Cafés</h4>
-          <p class="text-[11px] text-gray-400 mt-1">Menu & Avis Google</p>
-        </div>
-
-        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
-          <div class="text-2xl mb-2">✂️</div>
-          <h4 class="font-bold text-white text-sm">Salons de Beauté</h4>
-          <p class="text-[11px] text-gray-400 mt-1">Spas & Coiffure</p>
-        </div>
-
-        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
-          <div class="text-2xl mb-2">🏢</div>
-          <h4 class="font-bold text-white text-sm">Agents Immobiliers</h4>
-          <p class="text-[11px] text-gray-400 mt-1">Courtiers & Agences</p>
-        </div>
-
-        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
-          <div class="text-2xl mb-2">👥</div>
-          <h4 class="font-bold text-white text-sm">Entreprises</h4>
-          <p class="text-[11px] text-gray-400 mt-1">Équipes & Collaborateurs</p>
-        </div>
-
-        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
-          <div class="text-2xl mb-2">🛍️</div>
-          <h4 class="font-bold text-white text-sm">Commerçants</h4>
-          <p class="text-[11px] text-gray-400 mt-1">Boutiques & Magasins</p>
-        </div>
-
-        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
-          <div class="text-2xl mb-2">🩺</div>
-          <h4 class="font-bold text-white text-sm">Professionnels</h4>
-          <p class="text-[11px] text-gray-400 mt-1">Médecins & Avocats</p>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ============================================== -->
-  <!-- 7. SECTION OFFRE ACTUELLE -->
-  <!-- ============================================== -->
-  <section class="py-20 relative">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="gradient-border-box p-8 sm:p-12 text-center relative overflow-hidden shadow-[0_0_50px_rgba(255,122,0,0.15)]">
-        
-        <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-64 h-64 bg-brand-orange/20 rounded-full blur-3xl pointer-events-none"></div>
-
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-orange text-black text-xs sm:text-sm font-black tracking-wider uppercase mb-6 shadow-[0_0_20px_rgba(255,122,0,0.5)]">
-          🔥 OFFRE ACTUELLE LIMITÉE
-        </div>
-
-        <h3 class="text-3xl sm:text-5xl font-extrabold text-white font-display mb-4">
-          Pack Carte NFC VISION TAP
-        </h3>
-        
-        <p class="text-gray-300 max-w-xl mx-auto mb-8 text-sm sm:text-base">
-          Votre carte NFC configurée et prête à l'emploi. Configuration rapide de vos informations et assistance complète.
-        </p>
-
-        <div class="bg-brand-black/60 border border-brand-border rounded-2xl p-6 max-w-md mx-auto mb-8">
-          <div class="text-xs text-gray-400 uppercase tracking-wider mb-1">Prix Tout Inclus</div>
-          <div class="flex items-center justify-center gap-3">
-            <span class="text-gray-500 line-through text-2xl font-bold">399 DH</span>
-            <span class="text-5xl sm:text-6xl font-black text-white font-display">199 <span class="text-brand-orange text-2xl font-extrabold">DH</span></span>
-          </div>
-          <div class="mt-3 inline-flex items-center gap-2 text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full text-xs font-bold">
-            <i data-lucide="check" class="w-3.5 h-3.5"></i>
-            <span>LIVRAISON 100% GRATUITE PARTOUT AU MAROC</span>
-          </div>
-        </div>
-
-        <a href="#commander" class="track-checkout-btn inline-flex items-center justify-center gap-3 bg-gradient-to-r from-brand-orange to-brand-accent hover:from-brand-orangeGlow hover:to-brand-orange text-black font-extrabold px-10 py-4 rounded-xl text-lg transition-all duration-300 shadow-[0_0_30px_rgba(255,122,0,0.5)] hover:shadow-[0_0_50px_rgba(255,122,0,0.8)] transform hover:scale-105">
-          <i data-lucide="shopping-cart" class="w-5 h-5"></i>
-          <span>Commander maintenant</span>
-        </a>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ============================================== -->
-  <!-- 8. FORMULAIRE DE COMMANDE DIRECT (MAIN SECTION) -->
-  <!-- ============================================== -->
-  <section id="commander" class="py-20 md:py-24 bg-brand-dark/90 border-t border-brand-border relative">
+  <section id="commander" class="py-20 md:py-24 bg-brand-dark/90 border-b border-brand-border relative">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Section Title -->
@@ -940,6 +548,399 @@
           </p>
 
         </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- 4. C'EST QUOI UNE CARTE NFC ? -->
+  <!-- ============================================== -->
+  <section id="about" class="py-20 md:py-28 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/30 text-brand-orange text-xs font-semibold uppercase tracking-wider">
+          Définition & Utilité
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white font-display">
+          C'est quoi exactement une <span class="text-brand-orange">Carte NFC ?</span>
+        </h2>
+        <p class="text-gray-300 text-base sm:text-lg">
+          Une carte intelligente dotée d'une puce sans contact qui transmet instantanément l'intégralité de vos profils, liens et coordonnées professionnelles sur n'importe quel smartphone avec un simple contact.
+        </p>
+      </div>
+
+      <!-- What you can share grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+        
+        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+            <i data-lucide="message-circle" class="w-6 h-6"></i>
+          </div>
+          <h4 class="text-white font-bold text-sm">WhatsApp</h4>
+          <p class="text-[11px] text-gray-400">Lien direct de chat</p>
+        </div>
+
+        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
+          <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400">
+            <i data-lucide="instagram" class="w-6 h-6"></i>
+          </div>
+          <h4 class="text-white font-bold text-sm">Instagram</h4>
+          <p class="text-[11px] text-gray-400">Profil & portfolio</p>
+        </div>
+
+        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
+          <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
+            <i data-lucide="video" class="w-6 h-6"></i>
+          </div>
+          <h4 class="text-white font-bold text-sm">TikTok</h4>
+          <p class="text-[11px] text-gray-400">Compte & vidéos</p>
+        </div>
+
+        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
+          <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400">
+            <i data-lucide="facebook" class="w-6 h-6"></i>
+          </div>
+          <h4 class="text-white font-bold text-sm">Facebook</h4>
+          <p class="text-[11px] text-gray-400">Page entreprise</p>
+        </div>
+
+        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
+          <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange">
+            <i data-lucide="globe" class="w-6 h-6"></i>
+          </div>
+          <h4 class="text-white font-bold text-sm">Site Web</h4>
+          <p class="text-[11px] text-gray-400">Boutique & portfolio</p>
+        </div>
+
+        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
+          <div class="w-12 h-12 rounded-xl bg-green-500/10 border border-green-500/30 flex items-center justify-center text-green-400">
+            <i data-lucide="phone-call" class="w-6 h-6"></i>
+          </div>
+          <h4 class="text-white font-bold text-sm">Téléphone</h4>
+          <p class="text-[11px] text-gray-400">Appel immédiat</p>
+        </div>
+
+        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400">
+            <i data-lucide="mail" class="w-6 h-6"></i>
+          </div>
+          <h4 class="text-white font-bold text-sm">Email Pro</h4>
+          <p class="text-[11px] text-gray-400">Envoi en 1-clic</p>
+        </div>
+
+        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
+          <div class="w-12 h-12 rounded-xl bg-red-500/10 border border-red-500/30 flex items-center justify-center text-red-400">
+            <i data-lucide="map-pin" class="w-6 h-6"></i>
+          </div>
+          <h4 class="text-white font-bold text-sm">Google Maps</h4>
+          <p class="text-[11px] text-gray-400">Localisation GPS</p>
+        </div>
+
+        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
+          <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400">
+            <i data-lucide="contact" class="w-6 h-6"></i>
+          </div>
+          <h4 class="text-white font-bold text-sm">Contact vCard</h4>
+          <p class="text-[11px] text-gray-400">Enregistrement direct</p>
+        </div>
+
+        <div class="glass-panel glass-panel-hover p-5 rounded-2xl text-center flex flex-col items-center justify-center space-y-2.5">
+          <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400">
+            <i data-lucide="file-text" class="w-6 h-6"></i>
+          </div>
+          <h4 class="text-white font-bold text-sm">Menu & PDF</h4>
+          <p class="text-[11px] text-gray-400">Brochures & tarifs</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- 5. COMMENT ÇA MARCHE ? (3 ÉTAPES) -->
+  <!-- ============================================== -->
+  <section id="how-it-works" class="py-20 bg-brand-dark/50 border-t border-brand-border relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/30 text-brand-orange text-xs font-semibold uppercase tracking-wider">
+          Simplicité Absolue
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white font-display">
+          Comment ça marche en <span class="text-brand-orange">3 étapes ?</span>
+        </h2>
+        <p class="text-gray-300 text-base">Aucune application n'est nécessaire pour vous ou pour vos clients.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+        
+        <div class="relative bg-brand-card/90 border border-brand-border rounded-2xl p-8 flex flex-col justify-between hover:border-brand-orange/40 transition-all duration-300 group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-5xl font-black text-white/10 group-hover:text-brand-orange/30 transition-colors font-display">01</span>
+              <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange">
+                <i data-lucide="hand" class="w-6 h-6"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-white group-hover:text-brand-orange transition-colors">Approchez la carte</h3>
+            <p class="text-sm text-gray-300 leading-relaxed">
+              Tenez simplement votre carte VISION TAP et approchez-la du dos ou du haut du smartphone de votre interlocuteur.
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-brand-border/60 flex items-center gap-2 text-xs text-brand-orange font-semibold">
+            <span>Distance : 1 à 3 cm</span>
+          </div>
+        </div>
+
+        <div class="relative bg-brand-card/90 border border-brand-orange/40 rounded-2xl p-8 flex flex-col justify-between shadow-[0_0_30px_rgba(255,122,0,0.1)] group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-5xl font-black text-brand-orange/30 font-display">02</span>
+              <div class="w-12 h-12 rounded-xl bg-brand-orange flex items-center justify-center text-black">
+                <i data-lucide="zap" class="w-6 h-6"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-white">Un simple Tap</h3>
+            <p class="text-sm text-gray-300 leading-relaxed">
+              La technologie sans contact NFC déclenche une notification instantanée et automatique sur le téléphone de votre contact.
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-brand-border/60 flex items-center gap-2 text-xs text-brand-orange font-semibold">
+            <span>Détection instantanée (&lt; 1 sec)</span>
+          </div>
+        </div>
+
+        <div class="relative bg-brand-card/90 border border-brand-border rounded-2xl p-8 flex flex-col justify-between hover:border-brand-orange/40 transition-all duration-300 group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-5xl font-black text-white/10 group-hover:text-brand-orange/30 transition-colors font-display">03</span>
+              <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange">
+                <i data-lucide="user-check" class="w-6 h-6"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-white group-hover:text-brand-orange transition-colors">Vos infos s'affichent</h3>
+            <p class="text-sm text-gray-300 leading-relaxed">
+              Votre page de profil s'ouvre directement : votre client peut enregistrer vos coordonnées, vous écrire sur WhatsApp ou visiter votre site web.
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-brand-border/60 flex items-center gap-2 text-xs text-brand-orange font-semibold">
+            <span>Enregistrement 1-Clic dans les contacts</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- 6. POURQUOI VISION TAP ? (AVANTAGES) -->
+  <!-- ============================================== -->
+  <section id="benefits" class="py-20 md:py-28 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/30 text-brand-orange text-xs font-semibold uppercase tracking-wider">
+          Les Bénéfices
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white font-display">
+          Pourquoi choisir <span class="text-brand-orange">VISION TAP ?</span>
+        </h2>
+        <p class="text-gray-300 text-base">Finies les cartes en papier jetées à la poubelle. Passez au niveau supérieur de crédibilité.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="glass-panel glass-panel-hover p-6 rounded-2xl flex gap-4 items-start">
+          <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange shrink-0">
+            <i data-lucide="cpu" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-white mb-1">Technologie NFC Dernière Génération</h3>
+            <p class="text-xs sm:text-sm text-gray-400">Puce haute sensibilité pour une transmission rapide, fiable et sans friction.</p>
+          </div>
+        </div>
+
+        <div class="glass-panel glass-panel-hover p-6 rounded-2xl flex gap-4 items-start">
+          <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange shrink-0">
+            <i data-lucide="sparkles" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-white mb-1">Design Noir & Orange Premium</h3>
+            <p class="text-xs sm:text-sm text-gray-400">Finition élégante et soignée qui donne immédiatement une impression haut de gamme.</p>
+          </div>
+        </div>
+
+        <div class="glass-panel glass-panel-hover p-6 rounded-2xl flex gap-4 items-start">
+          <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange shrink-0">
+            <i data-lucide="app-window" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-white mb-1">Pas Besoin d'Application</h3>
+            <p class="text-xs sm:text-sm text-gray-400">Fonctionne nativement sur iPhone et Android sans aucune installation préalable.</p>
+          </div>
+        </div>
+
+        <div class="glass-panel glass-panel-hover p-6 rounded-2xl flex gap-4 items-start">
+          <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange shrink-0">
+            <i data-lucide="refresh-cw" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-white mb-1">Réutilisable & Écologique</h3>
+            <p class="text-xs sm:text-sm text-gray-400">Une seule carte pour toujours. Économisez des milliers de dirhams d'impressions papier.</p>
+          </div>
+        </div>
+
+        <div class="glass-panel glass-panel-hover p-6 rounded-2xl flex gap-4 items-start">
+          <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange shrink-0">
+            <i data-lucide="smartphone" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-white mb-1">Compatibilité Universelle</h3>
+            <p class="text-xs sm:text-sm text-gray-400">Compatible avec 99% des smartphones actuels (Apple iOS et Android).</p>
+          </div>
+        </div>
+
+        <div class="glass-panel glass-panel-hover p-6 rounded-2xl flex gap-4 items-start">
+          <div class="w-12 h-12 rounded-xl bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-brand-orange shrink-0">
+            <i data-lucide="briefcase" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-white mb-1">Impact & Image Professionnelle</h3>
+            <p class="text-xs sm:text-sm text-gray-400">Faites sensation auprès de vos clients et partenaires lors de chaque rencontre d'affaires.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- 7. POUR QUI ? (CIBLES) -->
+  <!-- ============================================== -->
+  <section id="targets" class="py-20 bg-brand-dark/40 border-y border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/30 text-brand-orange text-xs font-semibold uppercase tracking-wider">
+          Polyvalence
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white font-display">
+          À qui s'adresse <span class="text-brand-orange">VISION TAP ?</span>
+        </h2>
+        <p class="text-gray-300 text-base">Conçue pour toute personne ou entreprise souhaitant développer son réseau avec modernité.</p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        
+        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
+          <div class="text-2xl mb-2">💼</div>
+          <h4 class="font-bold text-white text-sm">Entrepreneurs</h4>
+          <p class="text-[11px] text-gray-400 mt-1">Fondateurs & Dirigeants</p>
+        </div>
+
+        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
+          <div class="text-2xl mb-2">📈</div>
+          <h4 class="font-bold text-white text-sm">Commerciaux</h4>
+          <p class="text-[11px] text-gray-400 mt-1">Ventes & Prospection</p>
+        </div>
+
+        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
+          <div class="text-2xl mb-2">💻</div>
+          <h4 class="font-bold text-white text-sm">Freelancers</h4>
+          <p class="text-[11px] text-gray-400 mt-1">Designers & Devs</p>
+        </div>
+
+        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
+          <div class="text-2xl mb-2">📸</div>
+          <h4 class="font-bold text-white text-sm">Créateurs de Contenu</h4>
+          <p class="text-[11px] text-gray-400 mt-1">Influenceurs & Médias</p>
+        </div>
+
+        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
+          <div class="text-2xl mb-2">🍽️</div>
+          <h4 class="font-bold text-white text-sm">Restaurants & Cafés</h4>
+          <p class="text-[11px] text-gray-400 mt-1">Menu & Avis Google</p>
+        </div>
+
+        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
+          <div class="text-2xl mb-2">✂️</div>
+          <h4 class="font-bold text-white text-sm">Salons de Beauté</h4>
+          <p class="text-[11px] text-gray-400 mt-1">Spas & Coiffure</p>
+        </div>
+
+        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
+          <div class="text-2xl mb-2">🏢</div>
+          <h4 class="font-bold text-white text-sm">Agents Immobiliers</h4>
+          <p class="text-[11px] text-gray-400 mt-1">Courtiers & Agences</p>
+        </div>
+
+        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
+          <div class="text-2xl mb-2">👥</div>
+          <h4 class="font-bold text-white text-sm">Entreprises</h4>
+          <p class="text-[11px] text-gray-400 mt-1">Équipes & Collaborateurs</p>
+        </div>
+
+        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
+          <div class="text-2xl mb-2">🛍️</div>
+          <h4 class="font-bold text-white text-sm">Commerçants</h4>
+          <p class="text-[11px] text-gray-400 mt-1">Boutiques & Magasins</p>
+        </div>
+
+        <div class="bg-brand-card/70 border border-brand-border p-4 rounded-xl text-center hover:border-brand-orange/50 transition">
+          <div class="text-2xl mb-2">🩺</div>
+          <h4 class="font-bold text-white text-sm">Professionnels</h4>
+          <p class="text-[11px] text-gray-400 mt-1">Médecins & Avocats</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- 8. SECTION OFFRE ACTUELLE -->
+  <!-- ============================================== -->
+  <section class="py-20 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="gradient-border-box p-8 sm:p-12 text-center relative overflow-hidden shadow-[0_0_50px_rgba(255,122,0,0.15)]">
+        
+        <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-64 h-64 bg-brand-orange/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-orange text-black text-xs sm:text-sm font-black tracking-wider uppercase mb-6 shadow-[0_0_20px_rgba(255,122,0,0.5)]">
+          🔥 OFFRE ACTUELLE LIMITÉE
+        </div>
+
+        <h3 class="text-3xl sm:text-5xl font-extrabold text-white font-display mb-4">
+          Pack Carte NFC VISION TAP
+        </h3>
+        
+        <p class="text-gray-300 max-w-xl mx-auto mb-8 text-sm sm:text-base">
+          Votre carte NFC configurée et prête à l'emploi. Configuration rapide de vos informations et assistance complète.
+        </p>
+
+        <div class="bg-brand-black/60 border border-brand-border rounded-2xl p-6 max-w-md mx-auto mb-8">
+          <div class="text-xs text-gray-400 uppercase tracking-wider mb-1">Prix Tout Inclus</div>
+          <div class="flex items-center justify-center gap-3">
+            <span class="text-gray-500 line-through text-2xl font-bold">399 DH</span>
+            <span class="text-5xl sm:text-6xl font-black text-white font-display">199 <span class="text-brand-orange text-2xl font-extrabold">DH</span></span>
+          </div>
+          <div class="mt-3 inline-flex items-center gap-2 text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full text-xs font-bold">
+            <i data-lucide="check" class="w-3.5 h-3.5"></i>
+            <span>LIVRAISON 100% GRATUITE PARTOUT AU MAROC</span>
+          </div>
+        </div>
+
+        <a href="#commander" class="track-checkout-btn inline-flex items-center justify-center gap-3 bg-gradient-to-r from-brand-orange to-brand-accent hover:from-brand-orangeGlow hover:to-brand-orange text-black font-extrabold px-10 py-4 rounded-xl text-lg transition-all duration-300 shadow-[0_0_30px_rgba(255,122,0,0.5)] hover:shadow-[0_0_50px_rgba(255,122,0,0.8)] transform hover:scale-105">
+          <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+          <span>Commander maintenant</span>
+        </a>
 
       </div>
 
@@ -1110,9 +1111,10 @@
 
         <div class="flex flex-wrap justify-center gap-6 text-xs sm:text-sm text-gray-400">
           <a href="#" class="hover:text-brand-orange transition">Accueil</a>
+          <a href="#commander" class="hover:text-brand-orange transition">Commander</a>
+          <a href="#about" class="hover:text-brand-orange transition">C'est quoi ?</a>
           <a href="#how-it-works" class="hover:text-brand-orange transition">Comment ça marche</a>
           <a href="#benefits" class="hover:text-brand-orange transition">Avantages</a>
-          <a href="#commander" class="hover:text-brand-orange transition">Commander</a>
           <a href="#faq" class="hover:text-brand-orange transition">FAQ</a>
         </div>
 
@@ -1272,7 +1274,7 @@
         });
       }
 
-      // 2. Loading State & منع النقر المزدوج
+      // 2. Loading State
       submitBtn.disabled = true;
       const originalBtnHtml = submitBtn.innerHTML;
       submitBtn.innerHTML = `
@@ -1284,7 +1286,7 @@
       `;
       errorMessage.classList.add('hidden');
 
-      // 3. تجهيز الـ Payload
+      // 3. Payload
       const payload = {
         nom: nom,
         telephone: telephone,
@@ -1295,7 +1297,7 @@
         prix: prix
       };
 
-      // 4. إرسال البيانات إلى Google Apps Script
+      // 4. Google Apps Script POST
       try {
         await fetch(GOOGLE_SCRIPT_URL, {
           method: 'POST',
@@ -1307,7 +1309,7 @@
           body: JSON.stringify(payload)
         });
 
-        // 5. إرسال Meta Pixel Purchase Event بعد نجاح الإرسال حصراً
+        // 5. Meta Pixel Purchase Event
         if (typeof fbq === 'function') {
           fbq('track', 'Purchase', {
             content_name: 'VISION TAP NFC Card',
@@ -1318,7 +1320,7 @@
           });
         }
 
-        // 6. حالة النجاح (Success State)
+        // 6. Success State
         orderForm.reset();
         currentQuantity = 1;
         updatePricing();
@@ -1327,7 +1329,6 @@
         successMessage.classList.remove('hidden');
         lucide.createIcons();
 
-        // التمرير التلقائي لرسالة النجاح
         successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
 
       } catch (err) {
